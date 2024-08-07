@@ -1,17 +1,60 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Avatar from './Avatar.astro';
+import ThemeController from './ThemeController.astro'
 ---
 
 <Layout title="Welcome to Astro.">
-	<div class="avatar">
+	<section class="flex justify-center mt-4 "> 
+    
+      
+		<div class="m-20 tracking-[.25em]">
+		<h1 class="text-2xl m-8 text-center">Bem Vindo! Eu sou o Felipe</h1>
+  
 		
-		<div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
-		  <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-		  <div  class="imagem">
-					
-		</div>
+		
+		<p class="whitespace-pre"> Explore meu trabalho como programador júnior e descubra como posso contribuir para o sucesso do seu projeto.</p>
+		<p class="text-center">Desenvolvendo o futuro, um código de cada vez.</p>
+  
+  
+	  <div class="mt-6 flex justify-center">
+		  <Avatar/>
 		  
-		</div>
 	  </div>
+  
+	  <div class="mt-6 flex justify-center" >
+		<ThemeController/>
+	  </div>  
+  
+	  <div class="text-center ">
+		<p class="p-10 ">Projetos desenvolvidos</p>
+	  </div>
+  
+	  <div class="flex first-line">
+		
+	  <img class="float-left w-64 h-64" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"/>
+		<p>Maybe we can live without libraries, </p>
+  
+  
+		<img class="float-left w-64 h-64" src="https://i.pinimg.com/564x/00/2e/69/002e69110468629d0a56c17473e061c5.jpg"/>
+		<p>Maybe we can live without libraries, </p>
+  
+  
+		<img class="float-right w-64 h-64" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"/>
+		<p>Maybe we can live without libraries, people like you and me</p>
+	
+		<img class="float-right w-64 h-64" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"/>
+		<p>Maybe we can live without libraries, people like you and me</p>
+  
+  
+  </div>
+  
+	  
+	  </div>
+  
+	  
+  
+  
+	  </section>
 </style>
