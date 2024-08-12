@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Avatar from '../components/Avatar.astro';
 import ThemeController from './ThemeController.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <Layout title="Welcome to Astro.">
@@ -10,12 +11,13 @@ import ThemeController from './ThemeController.astro'
     
       
 		<div class="m-20 tracking-[.25em]">
-		<h1 class="text-2xl m-8 text-center">Bem Vindo! Eu sou o Felipe</h1>
+			<div class="bg-amber-700 m-30 p-20 rounded">
+		<h1 class="text-2xl m-8 text-center text-white">Bem Vindo! Eu sou o Felipe</h1>
   
 		
 		
-		<p class="whitespace-pre text-center"> Explore meu trabalho como programador júnior e descubra como posso contribuir para o sucesso do seu projeto.</p>
-		<p class="text-center">Desenvolvendo o futuro, um código de cada vez.</p>
+		<p class="whitespace-pre text-center text-white"> Explore meu trabalho como programador júnior e descubra como posso contribuir para o sucesso do seu projeto.</p>
+		<p class="text-center text-white">Desenvolvendo o futuro, um código de cada vez.</p>
   
   
 	  <div class="mt-6 flex justify-center ">
@@ -26,12 +28,13 @@ import ThemeController from './ThemeController.astro'
 	  <div class="mt-6 flex justify-center" >
 		<ThemeController/>
 	  </div>  
+			</div>
   
-	  <div class="text-center ">
-		<p class="p-10 ">Projetos desenvolvidos</p>
+	  <div class="text-center pb-20">
+		<h1 class="p-10 text-3xl  ">Projetos desenvolvidos</h1>
 	  </div>
   
-	  <div class="flex first-line">
+	  <div class="flex justify-center grid grid-cols-4 gap-12 ">
 		
 	  <img class="float-left w-64 h-64" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png"/>
 		<p>Maybe we can live without libraries, </p>
@@ -55,11 +58,11 @@ import ThemeController from './ThemeController.astro'
   
 	  
   
-  
+
 	  
 
 </section>
 
-
+<Footer/>
 
 </Layout>
